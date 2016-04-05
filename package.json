@@ -1,10 +1,10 @@
 {
-  "name": "Stem",
+  "name": "gofilterfish",
   "version": "1.0.0",
-  "description": "This is the Marketing site for Stem.",
+  "description": "This is the Marketing site for gofilterfish.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/stems/marketing-site.git"
+    "url": "https://github.com/jovincroninwilesmith/gofilterfish.git"
   },
   "author": "Jovin CW",
   "license": "MIT",
