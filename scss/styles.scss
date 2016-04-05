@@ -1,0 +1,170 @@
+@import './modules/_colors';
+@import './modules/_fonts';
+@import './modules/_overrides';
+
+@import './partials/_buttons';
+
+@import '../node_modules/skeleton-scss/scss/skeleton.scss';
+
+html, body {
+	height: 100%;
+	margin: 0;
+}
+
+body {
+	background-color: $stem-white;
+	color: $stem-secondary-blue;
+	font-family: $default-font;
+	font-size: 18px;
+}
+
+section {
+
+
+}
+
+label {
+	font-weight: 300;
+}
+
+textarea,
+input[type="*"],
+{
+  border:none;
+}
+
+.img {
+	width:100%;
+}
+
+.feature-img {
+	width:70%;
+	@media (max-width: 400px) {
+		width:100%;
+	}
+}
+
+.fill-screen {
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+@media (max-width: 1024px) {
+	.fill-screen {
+		background-attachment: scroll;
+	}
+}
+
+.section-header {
+	line-height: 1em;
+}
+
+.section-body {
+	font-weight: 300;
+}
+
+.hero-section {
+	padding: 6rem 4rem;
+	background-color: $stem-default-red;
+	color: $stem-white;
+	.hero-image{
+		padding: 2rem;
+		@media (max-width: 400px) {
+			padding: 0;
+		}
+	}
+	.hero-text{
+		padding: 10rem 0 5rem 0;
+		/* Phone Query */
+		@media (max-width: 400px) {
+			padding: 4rem 0 2rem 0;
+		}
+		/* Tablet Query  */
+		@media (min-width: 750px) {
+
+		}
+	}
+}
+
+.feature-section-text {
+	padding: 12rem 0 5rem 0;
+	/* Phone Query */
+	@media (max-width: 400px) {
+		padding: 3rem 0 2rem 0;
+	}
+	/* Tablet Query  */
+	@media (min-width: 750px) {
+
+	}
+}
+
+
+.feature-section-one {
+	padding: 6rem 4rem 2rem 4rem;
+	background-color: $stem-default-orange;
+	color: $stem-white;
+	text-align: center;
+	.center-column {
+		padding: 0 20rem;
+		/* Phone Query */
+		@media (max-width: 400px) {
+			padding: 0 2rem;
+		}
+		/* Tablet Query  */
+		@media (min-width: 750px) {
+
+		}
+	}
+}
+
+.feature-section-two {
+	padding: 1.5rem 4rem 4rem 4rem;
+	background-color: $stem-default-blue;
+	color: $stem-white;
+	/* Phone Query */
+	@media (max-width: 400px) {
+		padding: 3rem 4rem 4rem 4rem;
+	}
+	/* Tablet Query  */
+	@media (min-width: 750px) {
+
+	}
+}
+
+.email-signup-section {
+	padding: 3rem 4rem 3rem 4rem;
+	background-color: $stem-default-blue;
+	color: $stem-white;
+}
+
+.footer-section {
+	padding: 4rem 4rem 0 4rem;
+	background-color: $stem-secondary-blue;
+	color: $stem-white;
+	ul {
+		margin: 0 0 2rem 0;
+		padding: 0;
+		list-style-type: none;
+		text-align: center;
+	}
+	ul li {
+		display: inline;
+	}
+	li {
+		padding: 0 1rem;
+	}
+	a {
+		color: $stem-white;
+		text-decoration: none;
+		 transition: all 0.3s ease;
+		&:hover {
+			color: $stem-white;
+		}
+	}
+	.copyright {
+		text-align: center;
+		font-size: .75em;
+		color:$stem-white;
+	}
+}
