@@ -9,7 +9,7 @@ var browserSync = require('browser-sync');
 var gutil = require('gulp-util');
 var concat = require('gulp-concat');
 var minimist = require('minimist');
-var minifyCss = require('gulp-minify-css');
+var cleanCSS = require('gulp-clean-css');
 var buffer = require('gulp-buffer');
 var uglify = require('gulp-uglify');
 var imagemin = require('gulp-imagemin');
@@ -50,7 +50,7 @@ gulp.task('sass', function(){
 	.pipe(environment === 'development' ? sourcemaps.init() : gutil.noop())
 	.pipe(sass()).on('error', handleError)
 	.pipe(postcss([ autoprefixer({ browsers: ['last 2 version'] }) ]))
-	.pipe(environment === 'production' ? minifyCss() : gutil.noop())
+	.pipe(environment === 'production' ? cleanCSS() : gutil.noop())
 	.pipe(sourcemaps.write())
 	.pipe(gulp.dest('dist/css'))
 	.pipe(reload());
