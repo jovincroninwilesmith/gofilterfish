@@ -64,6 +64,10 @@ input[type="*"],
 	font-weight: 300;
 }
 
+.service-icon {
+	width: 100px;
+}
+
 .hero-section {
 	padding: 6rem 4rem;
 	background-color: $stem-default-red;
@@ -84,6 +88,14 @@ input[type="*"],
 		@media (min-width: 750px) {
 
 		}
+	}
+	.section-header {
+		text-align: center;
+	}
+	.gff-logo{
+		width: 45px;
+		display: block;
+		margin: 0 auto 10px;
 	}
 }
 
@@ -142,17 +154,8 @@ input[type="*"],
 	padding: 4rem 4rem 0 4rem;
 	background-color: $stem-secondary-blue;
 	color: $stem-white;
-	ul {
-		margin: 0 0 2rem 0;
-		padding: 0;
-		list-style-type: none;
+	p {
 		text-align: center;
-	}
-	ul li {
-		display: inline;
-	}
-	li {
-		padding: 0 1rem;
 	}
 	a {
 		color: $stem-white;
@@ -161,6 +164,9 @@ input[type="*"],
 		&:hover {
 			color: $stem-white;
 		}
+	}
+	.section-header {
+		text-align: center;
 	}
 	.copyright {
 		text-align: center;
