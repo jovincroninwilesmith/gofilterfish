@@ -31,6 +31,7 @@ input[type="*"],
   border:none;
 }
 
+
 .img {
 	width:100%;
 }
@@ -73,6 +74,7 @@ input[type="*"],
 }
 
 .hero-section {
+	height: 100vh;
 	padding: 1rem 4rem;
 	background-color: $fish-default-red;
 	color: $fish-white;
@@ -108,26 +110,33 @@ input[type="*"],
 		display: block;
 		margin: 0 auto 10px;
 	}
-}
-
-.feature-section-text {
-	padding: 12rem 0 5rem 0;
-	/* Phone Query */
-	@media (max-width: 400px) {
-		padding: 3rem 0 2rem 0;
+	.container {
+		position: relative;
+		top: 45%;
+		transform: translateY(-45%);
 	}
-	/* Tablet Query  */
-	@media (min-width: 750px) {
-
+	@media screen and (min-width: 600px) {
+		.nav li {
+			width: 120px;
+			height: 50px;
+			font-size: 16px;
+			line-height: 20px;
+			display: inline-block;
+		}
 	}
 }
-
 
 .feature-section-one {
+	height: 100vh;
 	padding: 6rem 4rem 2rem 4rem;
 	background-color: $fish-default-orange;
 	color: $fish-white;
 	text-align: center;
+	.container {
+		position: relative;
+		top: 45%;
+		transform: translateY(-45%);
+	}
 	.center-column {
 		padding: 0 20rem;
 		/* Phone Query */
@@ -142,9 +151,15 @@ input[type="*"],
 }
 
 .feature-section-two {
-	padding: 1.5rem 4rem 4rem 4rem;
+	height: 100vh;
+	padding: 4rem 4rem 4rem 4rem;
 	background-color: $fish-default-blue;
 	color: $fish-white;
+	.container {
+		position: relative;
+		top: 45%;
+		transform: translateY(-45%);
+	}
 	/* Phone Query */
 	@media (max-width: 400px) {
 		padding: 3rem 4rem 4rem 4rem;
@@ -156,6 +171,7 @@ input[type="*"],
 }
 
 .footer-section {
+	height: 100vh;
 	padding: 4rem 4rem 0 4rem;
 	background-color: $fish-secondary-blue;
 	color: $fish-white;
@@ -178,15 +194,9 @@ input[type="*"],
 		font-size: .75em;
 		color:$fish-white;
 	}
-}
-
-
-@media screen and (min-width: 600px) {
-	.nav li {
-		width: 120px;
-		height: 50px;
-		font-size: 16px;
-		line-height: 20px;
-		display: inline-block;
+	.container {
+		position: relative;
+		top: 45%;
+		transform: translateY(-45%);
 	}
 }
