@@ -58,9 +58,7 @@ gulp.task('sass', function(){
 
 
 gulp.task('scripts', function(){
-	return browserify('./scripts/main.js', {
-		debug: environment === 'development'
-	})
+	return browserify('./scripts/main.js', { debug: environment === 'development' })
 	.bundle().on('error', handleError)
 	.pipe(source('bundle.js'))
 	.pipe(environment === 'production' ? buffer() : gutil.noop())

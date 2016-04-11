@@ -6,6 +6,7 @@
 
 @import './partials/_buttons';
 
+@import './vendor/_owl';
 
 
 html, body {
@@ -18,11 +19,6 @@ body {
 	color: $fish-secondary-blue;
 	font-family: $default-font;
 	font-size: 18px;
-}
-
-section {
-
-
 }
 
 label {
@@ -71,30 +67,37 @@ input[type="*"],
 }
 
 .filter-img {
-	width: 70%;
+	width: 90%;
 	display: block;
 	margin: 0 auto;
 }
 
 .hero-section {
-	padding: 6rem 4rem;
+	padding: 1rem 4rem;
 	background-color: $fish-default-red;
 	color: $fish-white;
-	.hero-image{
-		padding: 2rem;
-		@media (max-width: 400px) {
-			padding: 0;
-		}
+	.text-logo{
+		width: 60%;
+		float: left;
 	}
-	.hero-text{
-		padding: 10rem 0 5rem 0;
-		/* Phone Query */
-		@media (max-width: 400px) {
-			padding: 4rem 0 2rem 0;
+	.nav {
+		ul {
+			list-style: none;
+			background-color: transparent;
+			font-family: $default-font;
+			padding: 0;
+			margin: 0;
+			text-align: right;
 		}
-		/* Tablet Query  */
-		@media (min-width: 750px) {
-
+		li {
+			font-size: 16px;
+			line-height: 20px;
+			height: 40px;
+		}
+		a {
+			text-decoration: none;
+			color: #fff;
+			display: block;
 		}
 	}
 	.section-header {
@@ -152,12 +155,6 @@ input[type="*"],
 	}
 }
 
-.email-signup-section {
-	padding: 3rem 4rem 3rem 4rem;
-	background-color: $fish-default-blue;
-	color: $fish-white;
-}
-
 .footer-section {
 	padding: 4rem 4rem 0 4rem;
 	background-color: $fish-secondary-blue;
@@ -183,27 +180,6 @@ input[type="*"],
 	}
 }
 
-
-.nav {
-	ul {
-		list-style: none;
-		background-color: transparent;
-		font-family: $default-font;
-		padding: 0;
-		margin: 0;
-		text-align: right;
-	}
-	li {
-		font-size: 12px;
-		line-height: 20px;
-		height: 40px;
-	}
-	a {
-		text-decoration: none;
-		color: #fff;
-		display: block;
-	}
-}
 
 @media screen and (min-width: 600px) {
 	.nav li {
